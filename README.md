@@ -55,6 +55,3 @@ CREATE TABLE todo(
 ### Database Uri
 mysql://ufhydelnjutmzqj6:F1MSbuqe6AqR0ylbgkaV@b27moh4kvyykhnpa1lgb-mysql.services.clever-cloud.com:3306/b27moh4kvyykhnpa1lgb
 
-<!-- 
-  "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server", -->

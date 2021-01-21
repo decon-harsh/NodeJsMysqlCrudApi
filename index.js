@@ -9,10 +9,10 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
 
-// root route
-app.get('/', (req, res) => {
-  res.send("Go to /api/v1");
-});
+// // root route
+// app.get('/', (req, res) => {
+//   res.send("Go to /api/v1");
+// });
 
 // Require employee routes
 const userRoutes = require('./src/routes/user.routes');

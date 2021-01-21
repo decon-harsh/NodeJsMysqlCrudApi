@@ -20,7 +20,11 @@ const todoRoutes = require('./src/routes/todo.routes');
 // using as middleware
 app.use('/api/v1/user', userRoutes)
 app.use('/api/v1/todo', todoRoutes)
-// listen for requests
-app.listen(port, () => {
-  console.log(`Server is listening on port ${port}`);
-});
+
+module.exports ={
+  app
+}
+// // listen for requests
+// app.listen(port, () => {
+//   console.log(`Server is listening on port ${port}`);
+// });

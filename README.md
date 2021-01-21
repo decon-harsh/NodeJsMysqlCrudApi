@@ -1,10 +1,11 @@
 # NodeJsMysqlCrudApi
-#### To run locally
+## To run locally
 1. `npm start`
 
-#### Endpoints
+## Endpoints
 - Root: `localhost:8080/api/v1`
 
+### User
 
 - Get All Users: `localhost:8080/api/v1/user`
 - Post User: `localhost:8080/api/v1/user/`
@@ -14,6 +15,7 @@
     * body : {name : string}
 - Delete a User : `localhost:8080/api/user/{id}`
 
+### Task
 
 - Get All Tasks: `localhost:8080/api/v1/todo`
 - Post User: `localhost:8080/api/v1/todo/`

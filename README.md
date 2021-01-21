@@ -15,3 +15,6 @@ CREATE TABLE todo(
     updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     PRIMARY KEY (id)
 ); -->
+
+<!-- ot3AYLQzIUUJOvEgiNmK -->
+<!-- mysql://ufhydelnjutmzqj6:F1MSbuqe6AqR0ylbgkaV@b27moh4kvyykhnpa1lgb-mysql.services.clever-cloud.com:3306/b27moh4kvyykhnpa1lgb -->

@@ -2,11 +2,11 @@
 const mysql = require('mysql');
 
 const dbConn = mysql.createConnection({
-  host     : 'mysql80-afe9.euw2.cloud.ametnes.com',
-  port     : '3316',
-  user     : 'SptzXXJsFr',
-  database : '7750202550',
-  password : 'FjyeELGT5DoASDVZGsEo'
+  host     : 'b27moh4kvyykhnpa1lgb-mysql.services.clever-cloud.com',
+  port     : '3306',
+  user     : 'ufhydelnjutmzqj6',
+  database : 'b27moh4kvyykhnpa1lgb',
+  password : 'F1MSbuqe6AqR0ylbgkaV',
 });
 
 dbConn.connect(function(err) {

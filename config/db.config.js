@@ -9,8 +9,4 @@ const dbConn = mysql.createConnection({
   password : 'F1MSbuqe6AqR0ylbgkaV',
 });
 
-dbConn.connect(function(err) {
-  if (err) throw err;
-  console.log("Database Connected!");
-});
 module.exports = dbConn;

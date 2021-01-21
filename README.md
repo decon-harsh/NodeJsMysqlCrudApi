@@ -6,7 +6,7 @@
 - Root: `localhost:8080/api/v1`
 
 
-- Get All Users: `localhost:8080/api/v1/users`
+- Get All Users: `localhost:8080/api/v1/user`
 - Post User: `localhost:8080/api/v1/user/`
     * body : {name : string}
 - Get User by Id : `localhost:8080/api/user/{id}`

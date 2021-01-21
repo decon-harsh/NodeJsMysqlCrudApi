@@ -9,4 +9,13 @@ const dbConn = mysql.createConnection({
   password : 'F1MSbuqe6AqR0ylbgkaV',
 });
 
+dbConn.on('error', err => {
+  if (err.code === 'PROTOCOL_CONNECTION_LOST') {
+      // db error reconnect
+      disconnect_handler();
+  } else {
+      throw err;
+  }
+});
+
 module.exports = dbConn;

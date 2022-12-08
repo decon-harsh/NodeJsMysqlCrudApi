@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-const userController =   require('../controllers/user.controller');
+const userController =   require('../controllers/person.controller');
 // Retrieve all user
 router.get('/', userController.findAll);
 // Create a new user

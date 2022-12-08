@@ -1,8 +1,11 @@
 'use strict';
-var dbConn = require('./../../config/db.config');
+var dbConn = require('../../config/db.config');
 
 var User = function (user) {
     this.name = user.name;
+    this.age = user.age;
+    this.gender = user.gender;
+    this.mobileNumber = user.mobileNumber;
 };
 
 
@@ -13,7 +16,6 @@ User.create = function (newUser, result) {
             result(err, null);
         }
         else {
-            console.log(res.insertId);
             result(null, res.insertId);
         }
     });
@@ -38,7 +40,6 @@ User.findAll = function (result) {
             result(null, err);
         }
         else {
-            console.log('users : ', res);
             result(null, res);
         }
     });
@@ -52,7 +53,6 @@ User.update = function (id, user, result) {
                     console.log("error: ", err);
                     result(null, err);
                 } else {
-                    console.log(res.insertId);
                     result(null, res);
                 }
             });    

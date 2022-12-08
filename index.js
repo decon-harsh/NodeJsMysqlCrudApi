@@ -15,11 +15,9 @@ app.get('/', (req, res) => {
 });
 
 // Require employee routes
-const userRoutes = require('./src/routes/user.routes');
-const todoRoutes = require('./src/routes/todo.routes');
+const personRoutes = require('./src/routes/person.routes');
 // using as middleware
-app.use('/api/v1/user', userRoutes)
-app.use('/api/v1/todo', todoRoutes)
+app.use('/api/v1/person', personRoutes)
 
 // listen for requests
 app.listen(port, () => {
